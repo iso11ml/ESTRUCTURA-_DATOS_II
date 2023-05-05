@@ -3,9 +3,7 @@ Alumno: Isaay Sosa Hernández
 Grupo: 5HW1
 Utilice la lista enlazada para trabajar las colisiones
 Actividad: Tabla Hash
-
 '''
-
 import math
 class Node:
     def __init__(self, rfc, nombre_completo, salario):
@@ -107,7 +105,7 @@ while bandera == -1:
         rfc = input('Ingrese el RFC: ')
         trabajdor = hash_table.search(rfc)
         if trabajdor:
-            print(f"Empleado encontrado: RFC = {trabajdor[0]}, Nombre completo = {trabajdor[1]}, Salario = {trabajdor[2]}\n")
+            print(f"Empleado encontrado: RFC = {trabajdor[0]}, Nombre  = {trabajdor[1]}, Salario = {trabajdor[2]}\n")
         else:
             print(f"No se encontró ningún empleado con el RFC: {rfc}\n")
     elif opcion == 3:
