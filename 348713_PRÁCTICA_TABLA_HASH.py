@@ -83,7 +83,7 @@ class HashTable:
     def search(self, rfc):
         key = self.hash_function(rfc)
         trabajdor = self.table[key].search(rfc)
-        return (trabajdor.rfc, trabajdor.nombre_completo, trabajdor.salario) if worker else None
+        return (trabajdor.rfc, trabajdor.nombre_completo, trabajdor.salario) if trabajdor else None
 
     def delete(self, rfc):
         key = self.hash_function(rfc)
